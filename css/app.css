@@ -1,28 +1,82 @@
-html{
-    box-sizing: border-box;
+/* Reset template  */
+
+html {
+  box-sizing: border-box;
 }
-*,*:before, *:after{
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-.nombre-sitio{
-    padding-top: 100px;
-    padding-bottom: 100px;
+body{
+    font-family: 'Raleway', sans-serif;
 }
-.nombre-sitio span{
-    color: #037bc0;
+/* Globals */
+a {
+  text-decoration: none;
+  color: #000;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    display: block;
 }
 
+/* Header y navegacion  */
+.nombre-sitio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.nombre-sitio span {
+  color: #037bc0;
+}
+
+.contenedor-navegacion {
+  border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal {
+  padding: 20px 0;
+  display: flex;
+  justify-content:space-evenly ;
+}
+
+.hero {
+  background-image: url(/img/principal.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Categorias */
+.categorias h2{
+    text-align:center;
+}
+.categorias a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.categorias a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+}
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+
+}
 /*  Box MODEL  */
 
-.sobre-nosotros{
-
+.sobre-nosotros {
 }
 
-.navegacion{
-    text-transform: lowercase;
-    background-color: #e1e1e1;
-}
-
-.navegacion a{
-
+.navegacion a {
 }

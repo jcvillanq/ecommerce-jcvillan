@@ -2,16 +2,35 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 /* Globals */
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -20,15 +39,15 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
-img{
-    max-width: 100%;
-    display: block;
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /* Header y navegacion  */
 .nombre-sitio {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 5rem;
+
   text-align: center;
 }
 .nombre-sitio span {
@@ -36,47 +55,69 @@ img{
 }
 
 .contenedor-navegacion {
-  border-top: 1px solid #e1e1e1;
+  border-top: 0.1rem solid #e1e1e1;
 }
 
 .nav-principal {
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
-  justify-content:space-evenly ;
+  justify-content: space-evenly;
 }
 
 .hero {
   background-image: url(/img/principal.jpg);
-  height: 550px;
+  height: 55rem;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 /* Categorias */
-.categorias h2{
-    text-align:center;
+.categorias {
+  padding-top: 5rem;
 }
-.categorias a{
-    display: block;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
+.categorias h2 {
+  text-align: center;
 }
-.categorias a:hover{
-    background-color: #037bc0;
-    color: #fff;
-    border-bottom-right-radius: 10px;
+.categorias a {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
 }
-.listado-categorias{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
+.categorias a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  border-bottom-right-radius: 1rem;
+}
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
-}
-/*  Box MODEL  */
-
+/* sobre nosotros  */
 .sobre-nosotros {
+  margin-top: 10rem;
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #037bc0 50%,
+      #037bc0 100%
+    ),
+    url(/img/nosotros.jpg);
+  background-position: left center;
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 90rem;
 }
 
-.navegacion a {
+.sobre-nosotros-grid {
+  display: flex;
+  justify-content: flex-end;
+}
+.texto-nosotros {
+  flex-basis: 50%;
+  padding-left: 10rem;
+  color: #fff;
 }

@@ -32,39 +32,76 @@
 
     <main class="contenido-principal contenedor">
       <h2 class="text-center">Contacto</h2>
+      
+      <form class="formulario">
+        <fieldset>
+          <legend>tus datos</legend>
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Tu nombre" />
+          </div>
+          <div class="campo">
+            <label for="asunto">Asunto</label>
+            <input type="text" placeholder="Tu asunto" />
+          </div>
+          <div class="campo">
+            <label for="tel">Telefono</label>
+            <input id="tel" type="tel" placeholder="Tu telefono" />
+          </div>
+          <div class="campo">
+            <label for="mansaje">Mensaje</label>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="18"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pais</legend>
+          <div class="campo">
+            <label for="pais"> Pais</label>
+            <select name="pais" id="pais">
+              <option value="selecciona">-- Seleciona---</option>
+              <option value="BO">Bolivia</option>
+              <option value="EC">Ecuador</option>
+              <option value="MX">Mexico</option>
+              <option value="CH">Chile</option>
+              <option value="CO">Colombia</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>informacion extra</legend>
+          <div class="campo">
+            <label for="cliente"> Cliente</label>
+            <input type="radio" name="tipo" id="cliente" />
+          </div>
+          <div class="campo">
+            <label for="proveedor">Proveedor</label>
+            <input type="radio" name="tipo" id="proveedor" />
+          </div>
+          <div class="campo">
+            <label for="categoria">Categoria</label>
+            <input list="categorias" name="categorias" />
+            <datalist>
+              <option value="Cocina">
+              <option value="Oficina">
+              <option value="Casa">
+              <option value="Cocina">
+              <option value="Cocina">
+            </datalist>
+          </div>
+        </fieldset>
+
+        <input class="btn" type="submit" value="Enviar Fomulario">
+      </form>
     </main>
 
     <footer class="site-footer">
       <div class="grid-footer contenedor">
-        <form action="">
-          <fieldset>
-            <legend>tus datos</legend>
-            <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Tu nombre">
-            </div>  
-            <div class="campo">
-                <label for="asunto">Asunto</label>
-                <input type="text" placeholder="Tu asunto">
-            </div>
-            <div class="campo">
-                <label for="tel">Telefono</label>
-                <input id="tel" type="tel" placeholder="Tu telefono">
-            </div>
-            <div class="campo">
-              <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            </div>
-
-           
-          </fieldset>
-          <fieldset>
-            <legend>Pais</legend>
-          </fieldset>
-          <fieldset>
-              <legend>informacion extra</legend>
-          </fieldset>
-        </form>
-
         <div>
           <h3>Categorias</h3>
           <nav class="footer-menu">
